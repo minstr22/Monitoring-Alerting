@@ -28,7 +28,8 @@ First we must Add Discord Notification channel
 * Click the green button `Add channel`
 * Choose type `Discord`
 * Insert Webhook `Webhook URL`
-![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/Notification-discord.png)
+
+![Alert](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/Notification-discord.png)
 
 ## Alerting With Telegram
 First we must Add Telegram Notification channel
