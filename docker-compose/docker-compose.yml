@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+
+  Grafana:
+
+
+    image: grafana/grafana
+    restart: always
+    ports:
+      - 80:3000
+    volumes:
+      - /opt/grafana/notification/custom.ini:/etc/grafana/grafana.ini
+      - /opt/grafana/datasoures:/etc/grafana/provisioning/datasources
+      - /opt/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - /opt/grafana/data:/var/lib/grafana
+
+  prometheus:
+    image: quay.io/prometheus/prometheus:v2.7.1
+    restart: always
+    ports:
+      - 9090:9090
+    volumes:
+
+      - /opt/prometheus/config:/etc/prometheus
+      - /opt/prometheus/data:/prometheus
