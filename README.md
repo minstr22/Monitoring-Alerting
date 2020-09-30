@@ -19,7 +19,7 @@ The Grafana Dashboard is now accessible via: `http://<Host IP Address>` for exam
 
 Here's the Dashboard Template:
 
-![Grafana Dashboard](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard.png)
+![Grafana Dashboard](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard1)
 
 ## Alerting With
 Alerting has been added to the stack with Slack integration. 2 Alerts have been added and are managed
