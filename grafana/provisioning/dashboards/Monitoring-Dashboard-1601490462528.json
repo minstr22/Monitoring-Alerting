@@ -106,7 +106,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "(((count(count(node_cpu_seconds_total{instance=\"161.97.96.132:9100\", job=\"node\"}) by (cpu))) - avg(sum by (mode)(irate(node_cpu_seconds_total{mode='idle',instance=\"161.97.96.132:9100\", job=\"node\"}[5m])))) * 100) / count(count(node_cpu_seconds_total{instance=\"161.97.96.132:9100\", job=\"node\"}) by (cpu))",
+          "expr": "(((count(count(node_cpu_seconds_total{instance=\"node-exporter:9100\", job=\"node\"}) by (cpu))) - avg(sum by (mode)(irate(node_cpu_seconds_total{mode='idle',instance=\"node-exporter:9100\", job=\"node\"}[5m])))) * 100) / count(count(node_cpu_seconds_total{instance=\"node-exporter:9100\", job=\"node\"}) by (cpu))",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -249,7 +249,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "((node_memory_MemTotal_bytes{instance=\"161.97.96.132:9100\", job=\"node\"} - node_memory_MemFree_bytes{instance=\"161.97.96.132:9100\", job=\"node\"}) / (node_memory_MemTotal_bytes{instance=\"161.97.96.132:9100\", job=\"node\"} )) * 100",
+          "expr": "((node_memory_MemTotal_bytes{instance=\"node-exporter:9100\", job=\"node\"} - node_memory_MemFree_bytes{instance=\"node-exporter:9100\", job=\"node\"}) / (node_memory_MemTotal_bytes{instance=\"node-exporter:9100\", job=\"node\"} )) * 100",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
