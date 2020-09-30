@@ -39,8 +39,8 @@ First we must Add Telegram Notification channel
 * Choose type `Telegram`
 * Insert Your Telegram BOT `BOT API Token`
 * Insert Your Telegram Group ID (where you want to get alerts) `Chat ID`
-![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/notification-telegram.png)
 
+![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/notification-telegram.png)
 
 # Troubleshooting
 
