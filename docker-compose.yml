@@ -1,0 +1,39 @@
+version: '3.1'
+
+services:
+
+  Grafana:
+
+
+    image: grafana/grafana
+    restart: always
+    ports:
+      - 80:3000
+    volumes:
+      - /opt/grafana/datasoures:/etc/grafana/provisioning/datasources
+      - /opt/grafana/dashboards:/etc/grafana/provisioning/dashboards
+      - /opt/grafana/data:/var/lib/grafana
+
+  prometheus:
+    image: quay.io/prometheus/prometheus:v2.7.1
+    restart: always
+    ports:
+      - 9090:9090
+    volumes:
+
+      - /opt/prometheus/config:/etc/prometheus
+      - /opt/prometheus/data:/prometheus
+
+  node-exporter:
+    image: prom/node-exporter
+    volumes:
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+      - /:/rootfs:ro
+    command: 
+      - '--path.procfs=/host/proc' 
+      - '--path.sysfs=/host/sys'
+      - --collector.filesystem.ignored-mount-points
+      - "^/(sys|proc|dev|host|etc|rootfs/var/lib/docker/containers|rootfs/var/lib/docker/overlay2|rootfs/run/docker/netns|rootfs/var/lib/docker/aufs)($$|/)"
+    ports:
+      - 9100:9100      
