@@ -17,5 +17,6 @@ Once configurations are done let's start it up. From the /Monitoring-Alerting pr
     $ docker-compose up -d
 The Grafana Dashboard is now accessible via: `http://<Host IP Address>` for example http://192.168.10.1
 
-Here's the Dashboard Template
+Here's the Dashboard Template:
+
 ![Grafana Dashboard](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard.png)
