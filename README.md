@@ -23,5 +23,9 @@ Here's the Dashboard Template:
 
 ## Alerting With Discord
 First we must Add Discord Notification channel
-
-![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard1.png)
+* Click the `Alert` Menu at the top left corner (looks like a bell)
+* Click `Notification channels`
+* Click the green button `Add channel`
+* Choose type `Discord`
+* Insert Webhook `Webhook URL`
+![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/)
