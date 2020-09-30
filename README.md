@@ -16,3 +16,6 @@ Once configurations are done let's start it up. From the /Monitoring-Alerting pr
     $ sudo mkdir -p /opt/prometheus/data && chmod 775 /opt/prometheus/data
     $ docker-compose up -d
 The Grafana Dashboard is now accessible via: `http://<Host IP Address>` for example http://192.168.10.1
+Here's the Dashboard Template
+
+![Grafana Dashboard]()
