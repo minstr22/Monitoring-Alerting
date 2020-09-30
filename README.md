@@ -13,7 +13,7 @@ If you would like to change which targets should be monitored or make configurat
 Once configurations are done let's start it up. From the /Monitoring-Alerting project directory run the following command:
 
     $ sudo mkdir -p /opt/grafana/data && sudo chmod -R 777 /opt/grafana/data
-    $ sudo mkdir -p /opt/prometheus/data && sudo chmod -R777 /opt/prometheus/data
+    $ sudo mkdir -p /opt/prometheus/data && sudo chmod -R 777 /opt/prometheus/data
     $ docker-compose up -d
 The Grafana Dashboard is now accessible via: `http://<Host IP Address>` for example http://192.168.10.1
 
