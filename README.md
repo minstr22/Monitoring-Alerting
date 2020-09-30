@@ -21,18 +21,7 @@ Here's the Dashboard Template:
 
 ![Grafana Dashboard](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard1.png)
 
-## Alerting With
-Alerting has been added to the stack with Slack integration. 2 Alerts have been added and are managed
+## Alerting With Discord
+First we must Add Discord Notification channel
 
-Alerts              - `prometheus/alert.rules`
-Slack configuration - `alertmanager/config.yml`
-
-The Slack configuration requires to build a custom integration.
-* Open your slack team in your browser `https://<your-slack-team>.slack.com/apps`
-* Click build in the upper right corner
-* Choose Incoming Web Hooks link under Send Messages
-* Click on the "incoming webhook integration" link
-* Select which channel
-* Click on Add Incoming WebHooks integration
-* Copy the Webhook URL into the `alertmanager/config.yml` URL section
-* Fill in Slack username and channel
+![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard1.png)
