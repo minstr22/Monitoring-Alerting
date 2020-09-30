@@ -39,3 +39,12 @@ First we must Add Telegram Notification channel
 * Insert Your Telegram BOT `BOT API Token`
 * Insert Your Telegram Group ID (where you want to get alerts) `Chat ID`
 ![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/notification-telegram.png)
+
+
+# Troubleshooting
+
+It appears some people have reported no data appearing in Grafana. If this is happening to you be sure to check the time range being queried within Grafana to ensure it is using Today's date with current time.
+
+## Mac Users
+
+1. The node-exporter does not run the same as Mac and Linux. Node-Exporter is not designed to run on Mac and in fact cannot collect metrics from the Mac OS due to the differences between Mac and Linux OS's. 
