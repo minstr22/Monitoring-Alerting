@@ -19,7 +19,7 @@ The Grafana Dashboard is now accessible via: `http://<Host IP Address>` for exam
 
 Here's the Dashboard Template:
 
-![Grafana Dashboard](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/Dashboard1.png)
+![Grafana Dashboard](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/Dashboard1.png)
 
 ## Alerting With Discord
 First we must Add Discord Notification channel
@@ -28,4 +28,4 @@ First we must Add Discord Notification channel
 * Click the green button `Add channel`
 * Choose type `Discord`
 * Insert Webhook `Webhook URL`
-![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/)
+![Alerts](https://raw.githubusercontent.com/minstr22/Monitoring-Alerting/master/images/Notification-discord.png)
